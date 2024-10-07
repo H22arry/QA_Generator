@@ -9,3 +9,4 @@ with st.form("my_form"):
   test_type = st.selectbox('Question Type',('Subjective','Objective'))
   no_question = st.slider('No of Question',1,5,10)
   st.form_submit_button('Submit my picks')
+st.write(user_input)
