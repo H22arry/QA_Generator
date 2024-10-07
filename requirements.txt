@@ -2,5 +2,5 @@ streamlit
 flask
 numpy
 nltk
-re
+regex
 
