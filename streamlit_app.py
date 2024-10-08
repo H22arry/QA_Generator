@@ -10,8 +10,9 @@ with st.form("my_form"):
   user_input = st.text_area("Enter your text here", height=150)
   test_type = st.selectbox('Question Type',('Subjective','Objective'))
   no_question = st.slider('No of Question',1,5,10)
-  
-if  st.form_submit_button('Submit my picks'): 
+  submit_button = st.form_submit_button('Submit my picks')
+
+if submit_button
   question_list = []
   answer_list = []
   
