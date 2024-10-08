@@ -11,7 +11,7 @@ with st.form("my_form"):
   test_type = st.selectbox('Question Type',('Subjective','Objective'))
   no_question = st.slider('No of Question',1,5,10)
   
-if  st.button('Submit my picks'): 
+if  st.form_submit_button('Submit my picks'): 
   question_list = []
   answer_list = []
   
