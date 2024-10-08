@@ -23,9 +23,10 @@ if submit_button:
     elif test_type == "subjective":
       subjective_generator = SubjectiveTest(user_input, no_question)
       question_list, answer_list = subjective_generator.generate_test()
+
+    # Debugging: Print the lists to verify
+    st.write("Debug Info:")
+    st.write(f"Questions: {question_list}")
+    st.write(f"Answers: {answer_list}")
     
-    # Display the generated questions and answers
-    st.write("### Generated Test")
-    for i, (question, answer) in enumerate(zip(question_list, answer_list), start=1):
-        st.write(f"**Q{i}:** {question}")
-        st.write(f"**A{i}:** {answer}")
+    
