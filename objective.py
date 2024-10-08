@@ -11,9 +11,9 @@ nltk.download('wordnet')
 
 class ObjectiveTest:
 
-    def __init__(self, data, noOfQues):
+    def __init__(self, data, no_question):
         self.summary = data
-        self.noOfQues = noOfQues
+        self.no_question = no_question
 
     def get_trivial_sentences(self):
         sentences = nltk.sent_tokenize(self.summary)
@@ -114,13 +114,13 @@ class ObjectiveTest:
         trivial_pair = self.get_trivial_sentences()
         question_answer = list()
         for que_ans_dict in trivial_pair:
-            if que_ans_dict["Key"] > int(self.noOfQues):
+            if que_ans_dict["Key"] > int(self.no_question):
                 question_answer.append(que_ans_dict)
             else:
                 continue
         question = list()
         answer = list()
-        while len(question) < int(self.noOfQues):
+        while len(question) < int(self.no_question):
             rand_num = np.random.randint(0, len(question_answer))
             if question_answer[rand_num]["Question"] not in question:
                 question.append(question_answer[rand_num]["Question"])
