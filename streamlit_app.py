@@ -20,7 +20,7 @@ if submit_button:
     if test_type == "objective":
       objective_generator = ObjectiveTest(user_input, no_question)
       question_list, answer_list = objective_generator.generate_test()
-    elif testType == "subjective":
+    elif test_type == "subjective":
       subjective_generator = SubjectiveTest(user_input, no_question)
       question_list, answer_list = subjective_generator.generate_test()
     
