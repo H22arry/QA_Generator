@@ -3,5 +3,5 @@ flask
 numpy
 nltk
 regex
-objective
-subjective
+objective.py
+subjective.py
