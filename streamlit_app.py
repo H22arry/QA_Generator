@@ -14,6 +14,8 @@ with st.form("my_form"):
   submit_button = st.form_submit_button('Submit my picks')
 
 if submit_button:
+  question_list = []
+  answer_list = []
   if no_question<=0:
     st.error("Number of question should be greater than zero")
   else:
