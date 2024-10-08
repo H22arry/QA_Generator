@@ -17,7 +17,7 @@ if submit_button:
   if no_question<=0:
     st.error("Number of question should be greater than zero")
   else:
-    if test_type == "Objective":
+    if test_type == "objective":
       objective_generator = ObjectiveTest(user_input, no_question)
       question_list, answer_list = objective_generator.generate_test()
     elif testType == "subjective":
