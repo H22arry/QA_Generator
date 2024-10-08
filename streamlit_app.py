@@ -12,7 +12,7 @@ with st.form("my_form"):
   no_question = st.slider('No of Question',1,5,10)
   submit_button = st.form_submit_button('Submit my picks')
 
-if submit_button
+if submit_button :
   question_list = []
   answer_list = []
   
